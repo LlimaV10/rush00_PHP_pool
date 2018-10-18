@@ -1,0 +1,22 @@
+td {
+	background-color: white;
+	text-align: center;
+	margin: 20px;
+	padding: 0;
+	width: 15vw;
+	height: 100px;
+	/*border-radius: 20px;*/
+	border: 2px solid black;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+td img{
+	height: 100px;
+}
+
+.butt {
+	background: none;
+	width: 20px;
+	border: none;
+}

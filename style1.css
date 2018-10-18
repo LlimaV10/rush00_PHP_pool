@@ -1,0 +1,297 @@
+body {
+	background-color: #333;
+	padding: 0;
+	margin: 0;
+}
+
+.menu {
+	 opacity: 0.9999;
+	 z-index: 1;
+	 background-color: #333;
+	 width: 100%;
+	 top: 0;
+	 height: 46px;
+	 position: -webkit-fixed;
+	 position: fixed;
+}
+.menu ul {
+	left: calc(50vw - 432px / 2);
+	position: -webkit-fixed; /* Safari */
+    position: fixed;
+    top: 0;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+	color: black;
+	background-color: white;
+}
+
+.menu li a:hover i{
+	color: #4d94ff;
+}
+
+.auth {
+	
+}
+
+.auth ul {
+	opacity: 0.9999;
+	 z-index: 2;
+	right: 0;
+	position: -webkit-fixed; /* Safari */
+    position: fixed;
+    top: 0;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.auth li {
+	float: left;
+	display: block;
+    color: white;
+}
+
+.auth li a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.auth li a:hover {
+	color: black;
+	background-color: white;
+}
+
+.main_img {
+	background-image: url(img/background.png);
+	background-size: 100vw;
+	height: 56.25vw;
+	/*max-height: 100vh;*/
+	text-align: center;
+}
+
+.main_img>div {
+	position: relative;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	font-size: 3vw;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	top: calc(46px + 2vw);
+}
+
+.main_img div>div {
+	font-size: 2vw;
+}
+
+.main_img img {
+	width: 25vw;
+}
+
+.categories {
+	background-image: url(img/background.png);
+	background-size: 100vw;
+	height: 56.25vw;
+	/*max-height: calc(100vh - 46px);*/
+}
+
+.categories a {
+	text-decoration: none;
+}
+
+.categories div {
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	font-size: 2vw;
+	font-weight: bold;
+	text-shadow: 1px 1px black;
+	text-align: center;
+	color: white;
+	position: relative;
+	
+}
+
+.categories div table {
+	opacity: 0;
+	transform: scale(-1, 1);
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.categories div:hover table {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.categories div:hover {
+	cursor: pointer;
+	opacity: 1;
+	background-image: none;
+}
+
+.categories .c1 {
+	background-color: #00e600;
+	background-image: url(img/laptops.png);
+	background-size: cover;
+	opacity: 0.65;
+	top: 0;
+	left: 0;
+	width: 50vw;
+	height: 50%;
+}
+
+.categories .c1 td {
+	border: 2px solid #00e600;
+}
+
+.categories .c2 {
+	background-color: #1a8cff;
+	background-image: url(img/monitors2.png);
+	background-size: cover;
+	opacity: 0.65;
+	top: 0;
+	left: 0;
+	width: 50vw;
+	height: 50%;
+}
+
+.categories .c2 td {
+	border: 2px solid #1a8cff;
+}
+
+.categories .c3 {
+	position: relative;
+	background-color: #ff6666;
+	background-image: url(img/peripherals.png);
+	background-size: cover;
+	opacity: 0.65;
+	top: -100%;
+	left: 50vw;
+	width: 25vw;
+	height: 50%;
+}
+
+.categories .c3 td {
+	border: 2px solid #ff6666;
+}
+
+.categories .c4 {
+	position: relative;
+	background-color: #cc66ff;
+	background-image: url(img/speakers.png);
+	background-size: cover;
+	opacity: 0.65;
+	top: -100%;
+	left: 50vw;
+	width: 25vw;
+	height: 50%;
+}
+
+.categories .c4 td {
+	border: 2px solid #cc66ff;
+}
+
+.categories .c5 {
+	position: relative;
+	background-color: #1a8cff;
+	background-image: url(img/tablets.png);
+	background-size: cover;
+	opacity: 0.65;
+	top: -200%;
+	left: 75vw;
+	width: 25vw;
+	height: 50%;
+}
+
+.categories .c5 td {
+	border: 2px solid #1a8cff;
+}
+
+.categories .c6 {
+	position: relative;
+	background-color: #00e600;
+	background-image: url(img/MP3.png);
+	background-size: cover;
+	opacity: 0.65;
+	top: -200%;
+	left: 75vw;
+	width: 25vw;
+	height: 50%;
+}
+
+.categories .c6 td {
+	border: 2px solid #00e600;
+}
+
+.categories div td {
+	background-color: white;
+	width: 12.5vw;
+	border-radius: 15px;
+	height: 23vw;
+}
+
+.categories div td div {
+	font-size: 1.5vw;
+	text-shadow: none;
+	color: black;
+}
+
+.categories div img {
+	position: relative;
+	top: 0;
+	width: 100%;
+	/*width: 80%;*/
+}
+
+.add_to_cart {
+	background-color: pink;
+	border-radius: 15px;
+	margin: 1vw;
+	font-size: 1.5vw;
+	outline: none;
+}
+
+.footer {
+	height: 20px;
+	padding: 30px;
+	background-color: #333;
+	width: calc(100% - 60px);
+	text-align: left;
+	color: white;
+	float: left;
+	font-family: sans-serif;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer div {
+	float: right;
+}
